@@ -19,13 +19,11 @@
 
 
 
-body {
-    background-image: url('/static/images/background.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
+
+
+
+
+
 main{
     margin-left: 20px;
     margin-right:20px;

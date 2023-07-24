@@ -4,25 +4,148 @@
     
     <title>Weather App</title>
     <link rel="icon" type="image/png" href="/static/images/icon.png">
+    <link rel="stylesheet"  href="/static/css_files/main.css">
 
-    {% if atmos in ['Rain','Drizzle'] %}
-        <link rel="stylesheet" href="/static/css_files/rain.css">
+{% if atmos in ['Rain','Drizzle'] %}
 
-    {% elif atmos == 'Thunderstorm' %}
-        <link rel="stylesheet" href="/static/css_files/thuder.css">
 
-    {% elif atmos == 'Clouds' %}
-        <link rel="stylesheet" href="/static/css_files/clouds.css">
+    <style>
+        body{
+        background-image: url('/static/images/rain.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
 
-    {% elif atmos == 'Clear' %}
-        <link rel="stylesheet" href="/static/css_files/clear.css">
+        .section h3{
+        color:yellow;
+        margin-left:200px;
 
-    {% elif atmos == 'Snow'  %}
-        <link rel="stylesheet" href="/static/css_files/snow.css">
+    }
 
-    {% else %}
-        <link rel="stylesheet" href="/static/css_files/main.css">
-    {% endif %}
+    .section p{
+        
+        color:brown;
+        font-weight: 800;
+        margin-left:200px;
+    }
+    </style>
+
+{% elif atmos == 'Thunderstorm' %}
+    <style>
+        body{
+        background-image: url('/static/images/thunderstorm.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+        .section h3{
+        color:rgb(25, 87, 180);
+        margin-left:200px;
+
+    }
+
+    .section p{
+        
+        color:hsl(89, 68%, 42%);
+        font-weight: 800;
+        margin-left:200px;
+    }
+    </style>
+
+{% elif atmos == 'Clouds' %}
+    <style>
+        body{
+        background-image: url('/static/images/clouds.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+
+    .section h3{
+    color:rgb(225, 0, 0);
+    margin-left:200px;
+
+    }
+
+
+    .section p{
+        
+        color:rgb(57, 23, 23);
+        font-weight: 800;
+        margin-left:200px;
+    }
+
+    </style>
+
+{% elif atmos == 'Clear' %}
+    <style>
+        body{
+        background-image: url('/static/images/clear.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .section h3{
+    color:rgb(255, 246, 69);
+    margin-left:200px;
+
+    }
+
+    .section p{
+    
+    color:rgb(59, 38, 121);
+    font-weight: 800;
+    margin-left:200px;
+    }
+
+    </style>
+        
+
+{% elif atmos == 'Snow'  %}
+    <style>
+        body{
+        background-image: url('/static/images/snow.gif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+        .section h3{
+        color:yellow;
+        margin-left:200px;
+
+    }
+
+    .section p{
+        
+        color:brown;
+        font-weight: 800;
+        margin-left:200px;
+    }
+
+    </style>
+
+{% else %}
+    <style>
+        body{
+        background-image: url('/static/images/background.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    </style>
+{% endif %}
 
     
     
